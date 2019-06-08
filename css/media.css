@@ -1,0 +1,154 @@
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 960px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	  
+	  .text {
+    font-size: 12.5px;
+	  }
+	  .section5 p ,  .section5 li {
+		      font-size: 15px;
+		  }
+		  .list-iimages p { display:block; width:100%; font-size:27px;}
+
+}
+
+@media only screen 
+  and (min-device-width: 961px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	  
+	  .text {
+    font-size: 18.5px;
+	  }
+	  .section5 p ,  .section5 li {
+		      font-size: 30px;
+		  }
+
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+{
+	.section1 .col-sm-5 , .text , .section2 .col-sm-4 , .section4 .col-sm-4 { margin-bottom:30px;}
+ 	.section4 { margin-top:50px;}
+	.section h2 { margin-top:0px;}
+	.outer_vide_div iframe {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 30px;
+}
+.section4 .text { width:100% !important; max-width:100% !important; }
+h2 { font-size:31px !important}
+.section5 h2 { margin-left:15px;}
+.section1 h2 { margin-top:40px;}
+.section5 li { margin-left:20px;}
+}
+@media(max-width:768px) {
+	/* Icon 2 */
+	nav { display:none;}
+.col-xs-2 {
+	margin-top:1px;
+}
+nav ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+nav {
+	    background: #363635;
+    margin-top: 17px;
+	
+	}
+	nav a { color:#fff;}
+#nav-icon2 {
+}
+header { padding-top:40px;}
+#nav-icon2 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 50%;
+  background: #fff;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon2 span:nth-child(even) {
+  left: 50%;
+
+}
+
+#nav-icon2 span:nth-child(odd) {
+  left:0px;
+
+}
+
+#nav-icon2 span:nth-child(1), #nav-icon2 span:nth-child(2) {
+  top: 0px;
+}
+
+#nav-icon2 span:nth-child(3), #nav-icon2 span:nth-child(4) {
+  top: 18px;
+}
+
+#nav-icon2 span:nth-child(5), #nav-icon2 span:nth-child(6) {
+  top: 36px;
+}
+
+#nav-icon2.open span:nth-child(1),#nav-icon2.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon2.open span:nth-child(2),#nav-icon2.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon2.open span:nth-child(1) {
+  left: 5px;
+  top: 7px;
+}
+
+#nav-icon2.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+
+#nav-icon2.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+#nav-icon2.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+#nav-icon2.open span:nth-child(5) {
+  left: 5px;
+  top: 29px;
+}
+
+#nav-icon2.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 29px;
+}
+
+/* Icon 3 */
+	}

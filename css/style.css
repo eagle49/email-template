@@ -1,0 +1,140 @@
+* 
+{
+	margin: 0px;
+	padding: 0px;
+}
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/FuturaPT-Medium.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+	font-family: 'Futura PT Book';
+	background:#000;
+	color:#fff;
+	font-size:20px;
+	
+}
+
+img { max-width:100%; height:auto;}
+a { text-decoration:none;}
+header { display:block; text-align:center;}
+header img { display:block; margin:0 auto; max-width:100%; height:auto;}
+h1 , h2 , h3 , h4 ,h5 , a {  font-family: 'Futura PT';} 
+nav ul { margin:20px 0px 30px; padding:0px; display:inline-block;  }
+nav ul li { display:inline;}
+nav ul li a { color:#fff; margin-right:20px; text-decoration:none; font-size:18px; font-family: 'Futura PT'; }
+nav ul li a:hover { color:#d9ff80; margin-right:20px; text-decoration:none; font-size:18px; font-family: 'Futura PT'; }
+.section { float:left; width:100%; text-align:left; }
+.section h2 { font-size:42px; margin:40px 0px; color:#fff;}
+.section4.section h2 { text-align:center;}
+.right_gallery img { margin-bottom:30px;}
+.outer_vide_div { position:relative;}
+.outer_vide_div  iframe { position:absolute; top:0; bottom:0; left:0; }
+.hide_banner
+{
+	    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+	display:none;
+}
+#play-video {
+	    position: absolute;
+    z-index: 99;
+    transform: translate(50% , 50%);
+    top: 18px;
+	display:none;
+    left: 29%;
+	}
+	.section4 input[type="text"]  , .section4 input[type="email"]  , textarea{ 
+	background:#fff;
+	height:26px;
+	width:100%;
+	border:none;
+	color:#000;
+	font-size:20px;
+	margin-bottom:15px
+	
+	}
+	textarea { height:100px;}
+	.section4 input[type="submit"]
+	{
+		    background: #ccf078;
+    color: #000;
+    height: 32px;
+    width: 141px;
+    margin: 0 auto;
+    border: none;
+    font-size: 22px;
+    border-radius: 27px;
+	text-transform:uppercase;
+	display:block;
+	}
+	.section4 input[type="submit"]:hover
+	{
+		display:block;
+		    background: #fff;
+    color: #000;
+    height: 32px;
+    width: 141px;
+    margin: 0 auto;
+    border: none;
+    font-size: 22px;
+    border-radius: 27px;
+	text-transform:uppercase;
+	}
+	.section4  { margin-top:190px; float:left; width:100%; }
+	.section5 h3
+	{
+		color:#ccf078;
+		text-align:left;
+	}
+	#center_items { text-align:center;}
+	#center_items p { margin-top:15px;}
+	.footer { float:left; width:100%; text-align:center; background:#363636; padding:45px 0px; margin-top:100px;}
+	.footer p
+	{
+		 font-family: 'Futura PT';
+	}
+	.footer  a { margin-bottom:20px;}
+	.footer a:nth-child(1) , .ss1 { display:inline-block; width:40px; height:39px; background:url(../images/social_icons.png);} 
+	.footer a:nth-child(2)  , .ss2{ display:inline-block; width:40px; height:39px; background:url(../images/social_icons.png);     background-position: 154px;} 
+	.footer a:nth-child(3) , .ss3  { display:inline-block; width:40px; height:39px; background:url(../images/social_icons.png);     background-position: 96px;} 
+	.footer a:nth-child(4) , .ss4  { display:inline-block; width:40px; height:39px; background:url(../images/social_icons.png);     background-position: 40px;} 
+	.text {
+		    font-size: 23px;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 7px 14px;
+    border-radius: 10px;
+		
+		}
+		.ss1 { margin-top:41px;}
+		.list-iimages p { margin-bottom:0px; font-size:17px;}
+		.list-iimages { display:table; vertical-align:middle; width:100%; font-size:19px;     margin: 40px 0px 0px 0px; margin-left:-15px;}
+	
+		.bg-white { background:#fff; text-align:center; border-radius:10px; height:400px; width:100%; margin-top:50px;}
+		.bg-white h2 { color:#000; margin-top:30px; float:left; width:100%; } 
+.section5 ul
+{
+	margin-left:20px;
+}
+.footer a {
+    display: inline-block;
+    margin: 0px 5px;
+}
+.footer p{
+margin-top:10px;	
+	}
