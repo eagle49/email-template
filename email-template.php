@@ -89,7 +89,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Email Template</title>
+<title>Newsletter</title>
 <style>
 @font-face {
  font-family: 'Futura PT Book';
@@ -157,7 +157,7 @@ table, tr, td {
     <td valign="top" style="text-align:center; border:1px solid #fff; height:210px" width="50%;"><h3 style="color:#fff; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;"> <?= $calendar_block['title'] ?></h3>
 	<?php
 		foreach($calendar_block['events'] as $event) {
-			echo '<p style="color:#fff; margin:0px;">'.$event.'</p>';
+			echo '<p style="color:#fff; margin:0px;"><a<a href="#" style="color:#fff;text-decoration:none;" href="#" style="color:#fff;text-decoration:none;">'.$event.'</a></p>';
 		}
 	?>
     <td valign="top" style="text-align:center; border:1px solid #fff; margin-top:20px;" width="50%;"><h3 style="color:#fff; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;"><?= $spotify_block['title'] ?></h3>
@@ -191,13 +191,13 @@ table, tr, td {
 </table>
 <table width="690px" cellpadding="0" cellspacing="30" style="background:#000000; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';margin-top:-40px;">
   <tr>
-    <td style="text-align:center;background:#fff;height:240px; width:100%;border-radius:10px;" valign="top"><h2 style="margin-top:20px;">SPONSORS </h2></td>
+    <td style="text-align:center;background:#fff;height:240px; width:100%;border-radius:10px;" valign="top"><h2 style="margin-top:20px; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;">SPONSORS </h2></td>
   </tr>
 </table>
 <table width="690px" cellpadding="0" cellspacing="30" style="background:#363636; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';">
   <tr style="text-align:center; color:#fff; font-size:32px;" >
     <td height="37"><a href="http://www.nozolo.com/" target="_blank" style="color:#fff;text-decoration:none;">NOZOLO HOME PAGE</a><br>
-      <a href="http://www.nozolo.com/" target="_blank" style="color:#fff;text-decoration:none;">REGISTER</a> WITH NOZOLO </td>
+      <a href="http://www.nozolo.com/#register" target="_blank" style="color:#fff;text-decoration:none;">REGISTER</a> WITH NOZOLO </td>
   <tr>
     <td style="font-size:27px; color:#e9e9e9; text-align:center;"><a href="#" target="_blank"><img src="images/facbook.png" alt="facebook" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="images/twitter.png" alt="twitter" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="images/instagram.png" alt="instagram" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="images/youtube.png" alt="youtube" style="margin-right:10px;"></a><a href="http://www.nozolo.com/" target="_blank"><img src="images/home.png" alt="home"></a></td>
   </tr>

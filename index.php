@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Untitled Document</title>
+<title>Home</title>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -28,12 +28,13 @@
 <div class="clearfix"></div>
   <nav>
     <ul>
-      <li><a href="#">EVENTS</a></li>
-      <li><a href="#">PICS</a></li>
-      <li><a href="#">VIDEO</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">CAMPAIGNS</a></li>
-      <li><a href="#">REGISTER</a></li>
+      <li><a href="#events">EVENTS</a></li>
+      <li><a href="#pics">PICS</a></li>
+      <li><a href="#video">VIDEO</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="campaign_list.html">CAMPAIGNS</a></li>
+      <li><a href="#register">REGISTER</a></li>
+      <li class="top_social_menu"><a href="https://www.facebook.com/nozolomusic/" target="_blank"><img src="images/facbook.png" alt="facebook" style="margin-right:10px;display:inline-block;"></a><a href="https://twitter.com/NozoloMusic" target="_blank"><img src="images/twitter.png" alt="twitter" style="margin-right:10px;display:inline-block;"></a><a href="https://www.instagram.com/nozolomusic/" target="_blank"><img src="images/instagram.png" alt="instagram" style="margin-right:10px;display:inline-block;"></a><a href="#" target="_blank"><img src="images/youtube.png" alt="youtube" style="margin-right:5px;display:inline-block;"></a> <a href="http://www.nozolo.com/" target="_blank"><img src="images/home.png" alt="home" style="display:inline-block;"></a></li>
     </ul>
   </nav>
   </header>
@@ -43,7 +44,8 @@
 </div>
 
 <div class="section1 section">
-  <div class="container">
+  <div class="container" id="events">
+    <h1>EVENTS</h1>
     <h2>NOZOLO SOUL SUITE</h2>
     <div class="row">
       <div class="col-sm-5" > <img src="images/image1.jpg"  /> </div>
@@ -62,7 +64,7 @@ Next NSS is TBA!
   </div>
 </div>
 <div class="section2 section">
-  <div class="container">
+  <div class="container" id="pics">
     <h2>PICS</h2>
     <div class="row">
       <div class="col-sm-4"> <img src="images/image3.jpg"  /> </div>
@@ -72,7 +74,7 @@ Next NSS is TBA!
   </div>
 </div>
 <div class="section3 section">
-  <div class="container">
+  <div class="container" id="video">
     <h2>VIDEOS</h2>
     <div class="row">
       <div class="col-sm-4">
@@ -96,7 +98,7 @@ Next NSS is TBA!
   </div>
 </div>
 <div class="section4 section">
-  <div class="container">
+  <div class="container" id="register">
     <div class="row">
       <div class="col-sm-4">
         <h2>REGISTER</h2>
@@ -133,7 +135,7 @@ Next NSS is TBA!
   </div>
 </div>
 <div class="section5 section">
-  <div class="container">
+  <div class="container" id="about">
     <div class="row">
       <h2 style="width:100%; ">ABOUT NOZOLO MUSIC</h2>
       <div class="col-sm-4">
@@ -173,7 +175,8 @@ Next NSS is TBA!
 
 </footer>
 </body>
-<script src="js/jquery.min.js" type="text/javascript"></script>
+<!-- <script src="js/jquery.min.js" type="text/javascript"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script>
 $(document).ready(function(){
@@ -195,5 +198,16 @@ $(document).ready(function() {
   });
 });
 */
+$('nav ul li a[href*="#"]').on('click', function(e) {
+  e.preventDefault()
+
+  $('html, body').animate(
+    {
+      scrollTop: $($(this).attr('href')).offset().top,
+    },
+    500,
+    'linear'
+  )
+})
 </script>
 </html>
