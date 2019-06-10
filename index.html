@@ -102,21 +102,23 @@ Next NSS is TBA!
     <div class="row">
       <div class="col-sm-4">
         <h2>REGISTER</h2>
-        <form method="#">
-          <input type="text" name="name" placeholder=" FIRST NAME" />
-          <input type="text" name="lastname"  placeholder="LAST NAME" />
-          <input type="email" name="email"  placeholder=" EMAIL ADDRESS" />
-          <input type="text" name="zipCode"  placeholder="ZIP CODE" />
+        <form method="#" id="register-form">
+          <input type="hidden" name="type" id="type" value="register" />
+          <input type="text" name="fname" id="fname" placeholder=" FIRST NAME" required />
+          <input type="text" name="lname"  id="lname" placeholder="LAST NAME" required/>
+          <input type="email" name="r_email" id="r_email" placeholder=" EMAIL ADDRESS" required/>
+          <input type="text" name="zip_code" id="zip_code" placeholder="ZIP CODE" required/>
           <input type="submit" value="submit" />
         </form>
       </div>
       <div class="col-sm-4">
         <h2>CONTACT</h2>
-        <form method="#">
-          <input type="text" name="name" placeholder="NAME" />
-          <input type="email" name="email"  placeholder=" EMAIL ADDRESS" />
-          <input type="text" name="subject" placeholder="SUBJECT" />
-          <textarea rows="4" cols="50" placeholder="MESSAGE"></textarea>
+        <form method="#" id="contact-form">
+          <input type="hidden" name="type" id="type" value="contact">
+          <input type="text" name="name" id="name" placeholder="NAME" required/>
+          <input type="email" name="c_email"  placeholder=" EMAIL ADDRESS" required/>
+          <input type="text" name="subject" placeholder="SUBJECT" required/>
+          <textarea name="message" id="message" rows="4" cols="50" placeholder="MESSAGE" required></textarea>
           <input type="submit" value="submit" />
         </form>
       </div>
@@ -208,6 +210,25 @@ $('nav ul li a[href*="#"]').on('click', function(e) {
     500,
     'linear'
   )
-})
+});
+
+$("#register-form").on('submit', function(event) {
+	event.preventDefault();
+	console.log($("#fname").val());
+	$.ajax({
+		url: 'mail_send.php',
+		method: 'post',
+		data: {
+			'type':     'register',
+			'fname':    $('#fname').val(),
+			'lname':    $("#lname").val(),
+			'r_email':  $("#r_email").val(),
+			'zip_code': $("#zip_code").val(),
+		},
+		success: function(res) {
+			console.log(res);
+		}
+	})
+});
 </script>
 </html>
