@@ -73,13 +73,13 @@
     </body>
     </html>';
     require_once 'Swift/vendor/autoload.php';
-    $transport = (new Swift_SmtpTransport('mail.tbrsimulatorbeta.com', 465, "ssl"))
-                ->setUsername('dante@tbrsimulatorbeta.com')
-                ->setPassword('WVgkNBw#^g49');
+    $transport = (new Swift_SmtpTransport('smtp.sendgrid.net', 587, "tls"))
+                ->setUsername('rom3rehab')
+                ->setPassword('wearerom3');
 
     $mailer = new Swift_Mailer($transport);
     $message = (new Swift_Message($title))
-    ->setFrom(array('dante@tbrsimulatorbeta.com' => 'Verification Code from TBRSimulator'))
+    ->setFrom(array('nysochp@gmail.com' => $title))
     ->setTo(array('ppliongem@gmail.com' => 'LionKing'))
     ->setBody($body, 'text/html');
     //$attachment = Swift_Attachment::newInstance(file_get_contents('path/logo.png'), 'logo.png');  

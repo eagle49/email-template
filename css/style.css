@@ -69,7 +69,11 @@ nav ul li a:hover { color:#d9ff80; margin-right:20px; text-decoration:none; font
 	
 	}
 	textarea { height:100px;}
-	.section4 input[type="submit"]
+	.section4 button[type="submit"] i {
+		margin-left: 155px;
+		transition: 0.3s all;
+	}
+	.section4 button[type="submit"]
 	{
 		    background: #ccf078;
     color: #000;
@@ -82,7 +86,7 @@ nav ul li a:hover { color:#d9ff80; margin-right:20px; text-decoration:none; font
 	text-transform:uppercase;
 	display:block;
 	}
-	.section4 input[type="submit"]:hover
+	.section4 button[type="submit"]:hover
 	{
 		display:block;
 		    background: #fff;

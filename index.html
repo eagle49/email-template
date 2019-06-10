@@ -8,6 +8,7 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/media.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
 <header>
@@ -107,8 +108,9 @@ Next NSS is TBA!
           <input type="text" name="fname" id="fname" placeholder=" FIRST NAME" required />
           <input type="text" name="lname"  id="lname" placeholder="LAST NAME" required/>
           <input type="email" name="r_email" id="r_email" placeholder=" EMAIL ADDRESS" required/>
-          <input type="text" name="zip_code" id="zip_code" placeholder="ZIP CODE" required/>
-          <input type="submit" value="submit" />
+		  <input type="text" name="zip_code" id="zip_code" placeholder="ZIP CODE" required/>
+		  <button type="submit">Submit  <i class="fas fa-spinner fa-spin"></i></button>
+          <!-- <input type="submit" value="submit" /> -->
         </form>
       </div>
       <div class="col-sm-4">
@@ -116,10 +118,11 @@ Next NSS is TBA!
         <form method="#" id="contact-form">
           <input type="hidden" name="type" id="type" value="contact">
           <input type="text" name="name" id="name" placeholder="NAME" required/>
-          <input type="email" name="c_email"  placeholder=" EMAIL ADDRESS" required/>
-          <input type="text" name="subject" placeholder="SUBJECT" required/>
-          <textarea name="message" id="message" rows="4" cols="50" placeholder="MESSAGE" required></textarea>
-          <input type="submit" value="submit" />
+          <input type="email" name="c_email" id="c_email" placeholder=" EMAIL ADDRESS" required/>
+          <input type="text" name="subject" id="subject" placeholder="SUBJECT" required/>
+		  <textarea name="message" id="message" rows="4" cols="50" placeholder="MESSAGE" required></textarea>
+		  <button type="submit">Submit  <i class="fas fa-spinner fa-spin"></i></button>
+          <!-- <input type="submit" value="submit" /> -->
         </form>
       </div>
       <div class="col-sm-4">
@@ -214,7 +217,7 @@ $('nav ul li a[href*="#"]').on('click', function(e) {
 
 $("#register-form").on('submit', function(event) {
 	event.preventDefault();
-	console.log($("#fname").val());
+	$("#register-form button[type='submit'] i").css('margin-left', '5px');
 	$.ajax({
 		url: 'mail_send.php',
 		method: 'post',
@@ -227,8 +230,38 @@ $("#register-form").on('submit', function(event) {
 		},
 		success: function(res) {
 			console.log(res);
+			$("#register-form button[type='submit'] i").css('margin-left', '155px');
+		},
+		failure: function(err) {
+			console.log(err);
+			$("#register-form button[type='submit'] i").css('margin-left', '155px');
 		}
 	})
 });
+
+$("#contact-form").on('submit', function(event) {
+	event.preventDefault();
+	$("#contact-form button[type='submit'] i").css('margin-left', '5px');
+	$.ajax({
+		url: 'mail_send.php',
+		method: 'post',
+		data: {
+			'type':     'contact',
+			'name':     $('#name').val(),
+			'c_email':  $("#c_email").val(),
+			'subject':  $("#subject").val(),
+			'message':  $("#message").val(),
+		},
+		success: function(res) {
+			console.log(res);
+			$("#contact-form button[type='submit'] i").css('margin-left', '155px');
+		},
+		failure: function(err) {
+			console.log(err);
+			$("#contact-form button[type='submit'] i").css('margin-left', '155px');
+		}
+	})
+});
+
 </script>
 </html>

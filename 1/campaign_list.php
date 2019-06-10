@@ -105,16 +105,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Campaign</title>
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/media.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/media.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<header>
 		<div class="container"> 
 			<div class="col-sm-12 col-xs-10">
-				<a href="index.html"><img src="images/logo.jpg" alt="nozolo-music" class="image-responsive " /></a>
+				<a href="index.html"><img src="../images/logo.jpg" alt="nozolo-music" class="image-responsive " /></a>
 			</div>
 			<div class="col-xs-2">
 				<div id="nav-icon2">
@@ -142,19 +142,19 @@
     				<ul>
       					<li class="top_social_menu">
 							<a href="https://www.facebook.com/nozolomusic/" target="_blank">
-								<img src="images/facbook.png" alt="facebook" style="margin-right:10px;display:inline-block;">
+								<img src="../images/facbook.png" alt="facebook" style="margin-right:10px;display:inline-block;">
 							</a>
 							<a href="https://twitter.com/NozoloMusic" target="_blank">
-								<img src="images/twitter.png" alt="twitter" style="margin-right:10px;display:inline-block;">
+								<img src="../images/twitter.png" alt="twitter" style="margin-right:10px;display:inline-block;">
 							</a>
 							<a href="https://www.instagram.com/nozolomusic/" target="_blank">
-								<img src="images/instagram.png" alt="instagram" style="margin-right:10px;display:inline-block;">
+								<img src="../images/instagram.png" alt="instagram" style="margin-right:10px;display:inline-block;">
 							</a>
 							<a href="#" target="_blank">
-								<img src="images/youtube.png" alt="youtube" style="margin-right:5px;display:inline-block;">
+								<img src="../images/youtube.png" alt="youtube" style="margin-right:5px;display:inline-block;">
 							</a>
 							<a href="http://www.nozolo.com/" target="_blank">
-								<img src="images/home.png" alt="home" style="display:inline-block;">
+								<img src="../images/home.png" alt="home" style="display:inline-block;">
 							</a>
 						</li>
     				</ul>
@@ -168,7 +168,7 @@
 			<div class=" col-lg-4 ">
 				<div class="list-iimages">
 					<div class="list-items-content">
-						<div class="col-sm-4 col-xs-5"><img src="images/<?= $campaign['image'] ?>" /></div>
+						<div class="col-sm-4 col-xs-5"><img src="../images/<?= $campaign['image'] ?>" /></div>
 						<div class="col-sm-8 col-xs-7">
 							<div class="row">
 								<?php
@@ -195,18 +195,18 @@
 	</div>
 	<footer>
 		<div class="footer">
-			<a href="https://www.facebook.com/nozolomusic/" target="_blank"><img src="images/facbook.png" alt="facebook" style="margin-right:10px;display:inline-block;"></a>
-			<a href="https://twitter.com/NozoloMusic" target="_blank"><img src="images/twitter.png" alt="twitter" style="margin-right:10px;display:inline-block;"></a>
-			<a href="https://www.instagram.com/nozolomusic/" target="_blank"><img src="images/instagram.png" alt="instagram" style="margin-right:10px;display:inline-block;"></a>
-			<a href="#" target="_blank"><img src="images/youtube.png" alt="youtube" style="margin-right:5px;display:inline-block;"></a>
-			<a href="http://www.nozolo.com/" target="_blank"><img src="images/home.png" alt="home" style="display:inline-block;"></a>
+			<a href="https://www.facebook.com/nozolomusic/" target="_blank"><img src="../images/facbook.png" alt="facebook" style="margin-right:10px;display:inline-block;"></a>
+			<a href="https://twitter.com/NozoloMusic" target="_blank"><img src="../images/twitter.png" alt="twitter" style="margin-right:10px;display:inline-block;"></a>
+			<a href="https://www.instagram.com/nozolomusic/" target="_blank"><img src="../images/instagram.png" alt="instagram" style="margin-right:10px;display:inline-block;"></a>
+			<a href="#" target="_blank"><img src="../images/youtube.png" alt="youtube" style="margin-right:5px;display:inline-block;"></a>
+			<a href="http://www.nozolo.com/" target="_blank"><img src="../images/home.png" alt="home" style="display:inline-block;"></a>
 		<!-- </div> -->
 			<p>Copyright 2019 Nozolo Music. All Rights Reserved.</p>
 		</div>
 	</footer>
 </body>
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap.min.js" type="text/javascript"></script>
 <script>
 $(document).ready(function(){
 	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
