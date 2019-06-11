@@ -43,46 +43,62 @@
 	];
 
 	// http://prntscr.com/nz76a9
-	$youtube_block = [
-		'image'		   => 'emailimage2.jpg',
-		'youtube_link' => 'https://www.youtube.com/embed/ShZ978fBl6Y?controls=0'
+	$youtube_blocks = [
+			'image'		   => 'emailimage2.jpg',
+			'youtube_link' => 'https://www.youtube.com/embed/ShZ978fBl6Y?controls=0'
 	];
 
+	
 	// http://prntscr.com/nz76kt
-	$image_block = [
+	$image_blocks = [
 		// block1
 		[
+			'type'		=> 'thumbnail_with_title',
 			'title'		=> 'Caption',
 			'image'		=> 'emailimage2.jpg'
 		],
 		// block2
 		[
+			'type'		=> 'thumbnail_with_fullcontent',
 			'image'		=> 'emailimage2.jpg',
 			'content'	=> 'Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this 	image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image'
 		],
 		// block3
 		[
-			'image'		=> 'emailimage3.jpg',
-			'content'	=> 'Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this 	image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image'
+			'type'		   => 'thumbnail_youtube',
+			'image'		   => 'emailimage2.jpg',
+			'youtube_link' => 'https://www.youtube.com/embed/ShZ978fBl6Y?controls=0'
 		],
 		// block4
 		[
-			'image'		=> 'emailimage2.jpg'
+			'type'		=> 'thumbnail_with_halfcontent',
+			'image'		=> 'emailimage3.jpg',
+			'content'	=> 'Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this 	image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image Scroll and Read Details on this image'
 		],
 		// block5
 		[
+			'type'		=> 'thumbnail_only',
 			'image'		=> 'emailimage2.jpg'
 		],
 		// block6
 		[
+			'type'		=> 'thumbnail_only',
 			'image'		=> 'emailimage2.jpg'
 		],
 		// block7
 		[
+			'type'		=> 'thumbnail_only',
+			'image'		=> 'emailimage2.jpg'
+		],
+		// block8
+		[
+			'type'		=> 'thumbnail_only',
 			'image'		=> 'emailimage2.jpg'
 		]
-	]
+	];
 	
+	// $sss = [1, 2, 3, 5, 6, 7];
+	shuffle($image_blocks);
 ?>
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -167,29 +183,48 @@ table, tr, td {
   </tr>
 </table>
 <table width="690px" cellpadding="0" cellspacing="30" style="background:#000000; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';margin-top:-40px;">
-  <tr>
-    <td style="text-align:center;background-image:url(../images/<?= $image_block[0]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom"><h2 style="margin:0px 0px 0px 0px; color:#fff; text-shadow: 1px 0px 2px #000000;"><?= $image_block[0]['title'] ?></h2></td>
-    <td style="text-align:center;background-image:url(../images/<?= $image_block[1]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="middle"><div style="color:#fff;height:240px;width:100%;overflow-y: auto;float:left;margin:0px 0px 0px 0px; " class="scrollbar" id="style-8">
-        <div class="force-overflow"></div>
-        <?= $image_block[1]['content'] ?>
-		</div></td>
-  </tr>
-  <tr>
-    <td style="text-align:center;background-image:url(../images/<?= $youtube_block['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom"><iframe width="100%" height="240" src="<?= $youtube_block['youtube_link'] ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-    <td style="text-align:center;height:240px; width:50%;" valign="top"><img src="../images/<?= $image_block[2]['image'] ?>" width="262" height="140" alt="image" />
-      <div style="color:#fff;height:90px;width:100%;overflow-y: auto;float:left;margin:10px 0px 0px 0px; " class="scrollbar" id="style-8">
-        <div class="force-overflow"></div>
-		<?= $image_block[2]['content'] ?>
-		</div></td>
-  </tr>
-  <tr>
-    <td style="text-align:center;background-image:url(../images/<?= $image_block[3]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom"></td>
-    <td style="text-align:center;background-image:url(../images/<?= $image_block[4]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="middle"></td>
-  </tr>
-  <tr>
-    <td style="text-align:center;background-image:url(../images/<?= $image_block[5]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom"></td>
-    <td style="text-align:center;background-image:url(../images/<?= $image_block[6]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="middle"></td>
-  </tr>
+<?php
+	for($i=0; $i<count($image_blocks); $i++) {
+		// if ($i%2 == 0) echo '<tr>';
+		$type = $image_blocks[$i]['type'];
+		if ( $type == 'thumbnail_with_title' ) {
+?>
+    		<td style="text-align:center;background-image:url(../images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom"><h2 style="margin:0px 0px 0px 0px; color:#fff; text-shadow: 1px 0px 2px #000000;"><?= $image_blocks[$i]['title'] ?></h2></td>
+<?php
+		} else if ( $type == 'thumbnail_with_fullcontent' ) {
+?>
+		 <td style="text-align:center;background-image:url(../images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="middle">
+		 	<div style="color:#fff;height:240px;width:100%;overflow-y: auto;float:left;margin:0px 0px 0px 0px; " class="scrollbar" id="style-8">
+        		<div class="force-overflow"></div>
+        		<?= $image_blocks[$i]['content'] ?>
+			</div>
+		</td>
+<?php
+		} else if ( $type == 'thumbnail_youtube' ) {
+?>
+		 <td style="text-align:center;background-image:url(../images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom">
+		 	<iframe width="100%" height="240" src="<?= $image_blocks[$i]['youtube_link'] ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</td>
+<?php
+		} else if ( $type == 'thumbnail_with_halfcontent' ) {
+?>
+    <td style="text-align:center;height:240px; width:50%;" valign="top"><img src="../images/<?= $image_blocks[$i]['image'] ?>" width="262" height="140" alt="image" />
+		<div style="color:#fff;height:90px;width:100%;overflow-y: auto;float:left;margin:10px 0px 0px 0px; " class="scrollbar" id="style-8">
+        	<div class="force-overflow"></div>
+			<?= $image_blocks[$i]['content'] ?>
+		</div>
+	</td>
+<?php
+		} else if ( $type == 'thumbnail_only' ) {
+?>
+	<td style="text-align:center;background-image:url(../images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom">
+	</td>
+<?php	
+	}
+  	if ($i%2 == 1) echo '</tr>';
+} 
+
+?>
 </table>
 <table width="690px" cellpadding="0" cellspacing="30" style="background:#000000; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';margin-top:-40px;">
   <tr>
