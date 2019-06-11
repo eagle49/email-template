@@ -6,7 +6,8 @@
 				'CATEGORY: Live Soul',
 				'YEAR-MONTH: 2019-07',
 				'MARKET: Washington, DC'
-			]
+			],
+			'index'   => '1'
 		],
 		[
 			'image'   => 'list-image.png',
@@ -14,7 +15,8 @@
 				'CATEGORY: Live Soul',
 				'YEAR-MONTH: 2019-07',
 				'MARKET: Washington, DC'
-			]
+			],
+			'index'   => '2'
 		],
 		[
 			'image'   => 'list-image.png',
@@ -22,79 +24,8 @@
 				'CATEGORY: Live Soul',
 				'YEAR-MONTH: 2019-07',
 				'MARKET: Washington, DC'
-			]
-		],
-		[
-			'image'   => 'list-image.png',
-			'content' => [
-				'CATEGORY: Live Soul',
-				'YEAR-MONTH: 2019-07',
-				'MARKET: Washington, DC'
-			]
-		],
-		[
-			'image'   => 'list-image.png',
-			'content' => [
-				'CATEGORY: Live Soul',
-				'YEAR-MONTH: 2019-07',
-				'MARKET: Washington, DC'
-			]
-		],
-		[
-			'image'   => 'list-image.png',
-			'content' => [
-				'CATEGORY: Live Soul',
-				'YEAR-MONTH: 2019-07',
-				'MARKET: Washington, DC'
-			]
-		],
-		[
-			'image'   => 'list-image.png',
-			'content' => [
-				'CATEGORY: Live Soul',
-				'YEAR-MONTH: 2019-07',
-				'MARKET: Washington, DC'
-			]
-		],
-		[
-			'image'   => 'list-image.png',
-			'content' => [
-				'CATEGORY: Live Soul',
-				'YEAR-MONTH: 2019-07',
-				'MARKET: Washington, DC'
-			]
-		],
-		[
-			'image'   => 'list-image.png',
-			'content' => [
-				'CATEGORY: Live Soul',
-				'YEAR-MONTH: 2019-07',
-				'MARKET: Washington, DC'
-			]
-		],
-		[
-			'image'   => 'list-image.png',
-			'content' => [
-				'CATEGORY: Live Soul',
-				'YEAR-MONTH: 2019-07',
-				'MARKET: Washington, DC'
-			]
-		],
-		[
-			'image'   => 'list-image.png',
-			'content' => [
-				'CATEGORY: Live Soul',
-				'YEAR-MONTH: 2019-07',
-				'MARKET: Washington, DC'
-			]
-		],
-		[
-			'image'   => 'list-image.png',
-			'content' => [
-				'CATEGORY: Live Soul',
-				'YEAR-MONTH: 2019-07',
-				'MARKET: Washington, DC'
-			]
+			],
+			'index'   => '3'
 		],
 	]
 ?>
@@ -167,6 +98,7 @@
 		?>
 			<div class=" col-lg-4 ">
 				<div class="list-iimages">
+					<a href="./<?= $campaign['index'] ?>/email-template.php" style="color: white;">
 					<div class="list-items-content">
 						<div class="col-sm-4 col-xs-5"><img src="./images/<?= $campaign['image'] ?>" /></div>
 						<div class="col-sm-8 col-xs-7">
@@ -179,6 +111,7 @@
 							</div>
 						</div>
 					</div>
+					</a>
 				</div>
 			</div>
 		<?php
