@@ -73,17 +73,15 @@
     </body>
     </html>';
     require_once 'Swift/vendor/autoload.php';
-    $transport = (new Swift_SmtpTransport('smtp.sendgrid.net', 587, "tls"))
-                ->setUsername('rom3rehab')
-                ->setPassword('wearerom3');
+    $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, "ssl"))
+                ->setUsername('nozolomusic@gmail.com')
+                ->setPassword('musicnewsletter');
 
     $mailer = new Swift_Mailer($transport);
     $message = (new Swift_Message($title))
     ->setFrom(array('nysochp@gmail.com' => $title))
-    ->setTo(array('ppliongem@gmail.com' => 'LionKing'))
+    ->setTo(array('nozolomusic@gmail.com' => 'Raymond'))
     ->setBody($body, 'text/html');
-    //$attachment = Swift_Attachment::newInstance(file_get_contents('path/logo.png'), 'logo.png');  
-    //$message->attach($attachment);
     $numSent = $mailer->send($message);
 
     echo json_encode(['status' => 'success']);

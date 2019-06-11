@@ -5,21 +5,21 @@
 	// http://prntscr.com/nz72ta
 	$support1_block = [
 		'file_name' => 'emailimage1.jpg',
-		'title'		=> 'CecilyMusic.com',
+		'title'		=> 'Cecily Music',
 		'link'		=> 'http://cecilymusic.com/'
 	];
 
 	// http://prntscr.com/nz72y1
 	$support2_block = [
 		'file_name' => 'emailimage1.jpg',
-		'title'		=> 'Dantepope.com',
+		'title'		=> 'Dante pope',
 		'link'		=> 'https://www.dantepope.com/'
 	];
 
 	// http://prntscr.com/nz74t4
 	$support3_block = [
 		'file_name' => 'emailimage1.jpg',
-		'title'		=> 'MicahRobinson.com',
+		'title'		=> 'Micah Robinson',
 		'link'		=> 'https://www.micahrobinsonmusic.com/'
 	];
 
@@ -97,8 +97,7 @@
 		]
 	];
 	
-	// $sss = [1, 2, 3, 5, 6, 7];
-	shuffle($image_blocks);
+	// shuffle($image_blocks);
 ?>
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml">
