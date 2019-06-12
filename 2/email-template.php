@@ -250,16 +250,16 @@ table, tr, td {
 
 </body>
 <script>
-	$.ajax({
-		url: '../mail_send.php',
-		method: 'post',
-		data: {
-			'type': 'send_template',
-			'content': $('body').html()
-		},
-		success: function(resp) {
-			console.log(resp);
-		}
-	})
+	// $.ajax({
+	// 	url: '../mail_send.php',
+	// 	method: 'post',
+	// 	data: {
+	// 		'type': 'send_template',
+	// 		'content': $('body').html()
+	// 	},
+	// 	success: function(resp) {
+	// 		console.log(resp);
+	// 	}
+	// })
 </script>
 </html>
