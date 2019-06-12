@@ -15,12 +15,15 @@
         $lname = $_POST['lname'];
         $r_email = $_POST['r_email'];
         $zip_code = $_POST['zip_code'];
-    } else {
+    } else if ( $type == 'contact' ){
         $title = 'Client Contact Information';
         $name = $_POST['name'];
         $c_email = $_POST['c_email'];
         $subject = $_POST['subject'];
         $message = $_POST['message'];
+    } else {
+        $title = 'Send Template Mail';
+        $content = $_POST['content'];
     }
     $body = '
     <html>
@@ -80,8 +83,12 @@
     $mailer = new Swift_Mailer($transport);
     $message = (new Swift_Message($title))
     ->setFrom(array('nysochp@gmail.com' => $title))
-    ->setTo(array('nozolomusic@gmail.com' => 'Raymond'))
-    ->setBody($body, 'text/html');
+    ->setTo(array('raym@nozolomusic.com' => 'Raymond'));
+    if ($type == 'send_template') {
+        $message = $message->setBody($content, 'text/html');
+    } else {
+        $message = $message->setBody($body, 'text/html');
+    }
     $numSent = $mailer->send($message);
 
     echo json_encode(['status' => 'success']);
