@@ -38,7 +38,7 @@
 	// http://prntscr.com/nz7510
 	$spotify_block = [
 		'title'		=> 'PLAYLIST',
-		'link'		=> 'https://open.spotify.com/playlist/3tEgSJDGXro1blzJ8Z5Yle?si=AEydcSRwTxe-m9jNjy9FLw',
+		'link'		=> 'https://open.spotify.com/embed/playlist/3tEgSJDGXro1blzJ8Z5Yle',
 		'image'		=> 'sportify.jpg'
 	];
 
@@ -178,7 +178,7 @@ table, tr, td {
 		}
 	?>
     <td valign="top" style="text-align:center; border:1px solid #fff; margin-top:20px;" width="50%;"><h3 style="color:#fff; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;"><?= $spotify_block['title'] ?></h3>
-     <a href="<?= $spotify_block['link'] ?>" target="_blank"><img src="../images/<?= $spotify_block['image'] ?>" style="display:block; margin:0 auto;"></a></td>
+		<iframe src="<?= $spotify_block['link'] ?>" width="280" height="230" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </td>
   </tr>
 </table>
 <table width="690px" cellpadding="0" cellspacing="30" style="background:#000000; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';margin-top:-40px;">
