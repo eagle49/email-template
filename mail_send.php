@@ -83,7 +83,7 @@
     $mailer = new Swift_Mailer($transport);
     $message = (new Swift_Message($title))
     ->setFrom(array('nysochp@gmail.com' => $title))
-    ->setTo(array('raym@nozolomusic.com' => 'Raymond'));
+    ->setTo(array('ppliongem@gmail.com' => 'Raymond'));
     if ($type == 'send_template') {
         $message = $message->setBody($content, 'text/html');
     } else {

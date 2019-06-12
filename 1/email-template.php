@@ -59,8 +59,8 @@
 		// block3
 		[
 			'type'		   => 'thumbnail_youtube',
-			'image'		   => 'emailimage2.jpg',
-			'youtube_link' => 'https://www.youtube.com/embed/ShZ978fBl6Y?controls=0'
+			'image'		   => 'youtube_back.jpg',
+			'youtube_link' => 'https://www.youtube.com/watch?v=ShZ978fBl6Y'
 		],
 		// block4
 		[
@@ -120,7 +120,7 @@ table, tr, td {
 	overflow-y: scroll;
 	margin-bottom: 25px;
 }
- //*
+/*
  *  STYLE 3
  */
  #style-8::-webkit-scrollbar-track {
@@ -166,7 +166,7 @@ table, tr, td {
     <td style="text-align:center;"><a href="<?= $support2_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><img src="http://nozolomusic.com/images/<?= $support2_block['file_name'] ?>" width="181" height="121" align="image" /></a>
       <p style="margin:0px 0px 0px 0px; color:#fff;"><a href="<?= $support2_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><?= $support2_block['title'] ?></a></p></td>
     <td style="text-align:center;"><a href="<a href="<?= $support3_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><img src="http://nozolomusic.com/images/<?= $support3_block['file_name'] ?>" width="181" height="121" align="image" /></a>
-      <p style="margin:0px 0px 0px 0px; color:#fff;"><a href="<a href="<?= $support3_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><?= $support3_block['title'] ?></a></p></td>
+      <p style="margin:0px 0px 0px 0px; color:#fff;"><a href="<?= $support3_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><?= $support3_block['title'] ?></a></p></td>
   </tr>
 </table>
 <table width="690px" cellpadding="0" cellspacing="30" style="background:#000000; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';margin-top:-40px;">
@@ -187,7 +187,7 @@ table, tr, td {
 		} else if ( $type == 'playlist_block' ) {
 ?>
 		<td valign="top" style="text-align:center; margin-top:20px;" width="50%;"><h3 style="color:#fff; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;"><?= $image_blocks[$i]['title'] ?></h3>
-		<iframe src="<?= $image_blocks[$i]['link'] ?>" width="280" height="230" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </td>
+		<a href="<?= $image_blocks[$i]['link'] ?>" target="_blank"><img src="http://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>" style="display:block; margin:0 auto;"></a></td>
 <?php			
 		} else if ( $type == 'thumbnail_with_title' ) {
 ?>
@@ -204,8 +204,9 @@ table, tr, td {
 <?php
 		} else if ( $type == 'thumbnail_youtube' ) {
 ?>
-		 <td style="text-align:center;background-image:url(http://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom">
-		 	<iframe width="100%" height="240" src="<?= $image_blocks[$i]['youtube_link'] ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 <td style="text-align:center;height:240px; width:50%; position: relative;" valign="bottom">
+			 <a href="<?= $image_blocks[$i]['youtube_link'] ?>" style="width:100%; height: 100%; display: block; position:relative; background:url(http://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>">
+			 </a>
 		</td>
 <?php
 		} else if ( $type == 'thumbnail_with_halfcontent' ) {
@@ -250,6 +251,7 @@ table, tr, td {
 
 </body>
 <script>
+	console.log($('body').html());
 	// $.ajax({
 	// 	url: '../mail_send.php',
 	// 	method: 'post',
