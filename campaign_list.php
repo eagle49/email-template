@@ -43,12 +43,6 @@
 			'image' => 'ingredient8.jpg',
 		],
 		[
-			'image' => 'face.png',
-		],
-		[
-			'image' => 'ingredient5.jpg',
-		],
-		[
 			'image' => 'ingredient8.jpg',
 		],
 		[
@@ -151,12 +145,12 @@
 	</div>
 	<div class="section1 section">
 		<div class="container">
-			<div class="bg-white">
+			<div class="bg-sponsor">
 				<h2 style="text-align:center;">SPONSORS</h2>
 					<?php
 					foreach($sponsors as $sponser) {
-						echo '<div class="col-md-2 col-sm-3">
-							<img src="http://localhost/email-template/images/'.$sponser["image"].'" style="width: 100%; height: 150px;">
+						echo '<div class="col-md-3 col-sm-4">
+							<img src="http://localhost/email-template/images/'.$sponser["image"].'" style="width: 100%; max-width: 150px; height: 150px;">
 							</div>';
 						}
 					?>

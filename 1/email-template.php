@@ -261,7 +261,7 @@ table, tr, td {
 </table>
 <table width="690px" cellpadding="0" cellspacing="30" style="background:#000000; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';margin-top:-40px;">
   <tr>
-		<td style="text-align:center;background:#fff;float: left; width:100%;border-radius:10px;" valign="top"><h2 style="margin-top:20px; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;">SPONSORS </h2>
+		<td style="text-align:center;background:#363636;float: left; width:100%;border-radius:10px;" valign="top"><h2 style="margin-top:20px; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;">SPONSORS </h2>
 		<table>
 			<?php
 		for($i=0; $i<count($sponsors); $i++) {
@@ -277,7 +277,7 @@ table, tr, td {
 	</tr>
 	
 </table>
-<table width="690px" cellpadding="0" cellspacing="30" style="background:#363636; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';">
+<table width="590px" cellpadding="0" cellspacing="30" style="background:#363636; padding:20px 20px 20px 20px; font-family: 'Futura PT Book'; margin-left: 50px;">
   <tr style="text-align:center; color:#fff; font-size:32px;" >
     <td height="37"><a href="http://www.nozolomusic.com/" target="_blank" style="color:#fff;text-decoration:none;">NOZOLO HOME PAGE</a><br>
       <a href="http://www.nozolomusic.com/#register" target="_blank" style="color:#fff;text-decoration:none;">REGISTER</a> WITH NOZOLO </td>
