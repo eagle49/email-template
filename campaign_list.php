@@ -27,7 +27,37 @@
 			],
 			'index'   => '3'
 		],
-	]
+	];
+
+	$sponsors = [
+		[
+			'image' => 'face.png',
+		],
+		[
+			'image' => 'ingredient8.jpg',
+		],
+		[
+			'image' => 'ingredient5.jpg',
+		],
+		[
+			'image' => 'ingredient8.jpg',
+		],
+		[
+			'image' => 'face.png',
+		],
+		[
+			'image' => 'ingredient5.jpg',
+		],
+		[
+			'image' => 'ingredient8.jpg',
+		],
+		[
+			'image' => 'ingredient5.jpg',
+		],
+		[
+			'image' => 'face.png',
+		],
+	];
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -123,6 +153,13 @@
 		<div class="container">
 			<div class="bg-white">
 				<h2 style="text-align:center;">SPONSORS</h2>
+					<?php
+					foreach($sponsors as $sponser) {
+						echo '<div class="col-md-2 col-sm-3">
+							<img src="http://localhost/email-template/images/'.$sponser["image"].'" style="width: 100%; height: 150px;">
+							</div>';
+						}
+					?>
 			</div>
 		</div>
 	</div>
@@ -138,8 +175,8 @@
 		</div>
 	</footer>
 </body>
-<script src="../js/jquery.min.js" type="text/javascript"></script>
-<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/jquery.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript"></script>
 <script>
 $(document).ready(function(){
 	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){

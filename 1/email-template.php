@@ -90,6 +90,29 @@
 		]
 	];
 	
+	$sponsors = [
+		[
+			'image' => 'face.png',
+		],
+		[
+			'image' => 'ingredient8.jpg',
+		],
+		[
+			'image' => 'ingredient5.jpg',
+		],
+		[
+			'image' => 'ingredient8.jpg',
+		],
+		[
+			'image' => 'ingredient8.jpg',
+		],
+		[
+			'image' => 'ingredient5.jpg',
+		],
+		[
+			'image' => 'face.png',
+		],
+	];
 	// shuffle($image_blocks);
 ?>
 <!DOCTYPE>
@@ -102,13 +125,13 @@
 <style>
 @font-face {
  font-family: 'Futura PT Book';
- src: url('../fonts/FuturaPT-Book.woff2') format('woff2'), url('../fonts/FuturaPT-Book.woff') format('woff');
+ src: url('http://nozolomusic.com/fonts/FuturaPT-Book.woff2') format('woff2'), url('http://nozolomusic.com/fonts/FuturaPT-Book.woff') format('woff');
  font-weight: normal;
  font-style: normal;
 }
  @font-face {
  font-family: 'Futura PT';
- src: url('../fonts/FuturaPT-Medium.woff2') format('woff2'), url('../fonts/FuturaPT-Medium.woff') format('woff');
+ src: url('http://nozolomusic.com/fonts/FuturaPT-Medium.woff2') format('woff2'), url('http://nozolomusic.com/fonts/FuturaPT-Medium.woff') format('woff');
  font-weight: 500;
  font-style: normal;
 }
@@ -231,8 +254,21 @@ table, tr, td {
 </table>
 <table width="690px" cellpadding="0" cellspacing="30" style="background:#000000; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';margin-top:-40px;">
   <tr>
-    <td style="text-align:center;background:#fff;height:240px; width:100%;border-radius:10px;" valign="top"><h2 style="margin-top:20px; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;">SPONSORS </h2></td>
-  </tr>
+		<td style="text-align:center;background:#fff;float: left; width:100%;border-radius:10px;" valign="top"><h2 style="margin-top:20px; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;">SPONSORS </h2>
+		<table>
+			<?php
+		for($i=0; $i<count($sponsors); $i++) {
+			if ($i%4 == 0) echo '<tr>';
+			echo '<td style="width: 25%; border-radius: 30px; valign: top;">
+				<img src="http://nozolomusic.com/images/'.$sponsors[$i]['image'].'" style="width: 100%; height: 150px;"/>
+			</td>';
+			// if ($i%2 == 0) echo '</tr>';
+		}
+		?>
+		</table>
+		</td>
+	</tr>
+	
 </table>
 <table width="690px" cellpadding="0" cellspacing="30" style="background:#363636; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';">
   <tr style="text-align:center; color:#fff; font-size:32px;" >
@@ -251,7 +287,6 @@ table, tr, td {
 
 </body>
 <script>
-	console.log($('body').html());
 	// $.ajax({
 	// 	url: '../mail_send.php',
 	// 	method: 'post',

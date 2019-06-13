@@ -129,7 +129,7 @@ nav ul li a:hover { color:#d9ff80; margin-right:20px; text-decoration:none; font
 		.list-iimages p { margin-bottom:0px; font-size:17px;}
 		.list-iimages { display:table; vertical-align:middle; width:100%; font-size:19px;     margin: 40px 0px 0px 0px; margin-left:-15px;}
 	
-		.bg-white { background:#fff; text-align:center; border-radius:10px; height:400px; width:100%; margin-top:50px;}
+		.bg-white { background:#fff; text-align:center; border-radius:10px; float: left; width:100%; margin-top:50px; padding-bottom: 20px;}
 		.bg-white h2 { color:#000; margin-top:30px; float:left; width:100%;color: #000 !important;
     margin-top: 30px !important; } 
 .section5 ul
@@ -143,7 +143,7 @@ nav ul li a:hover { color:#d9ff80; margin-right:20px; text-decoration:none; font
 .footer p{
 margin-top:10px;	
 	}
-.section1 h2 { font-size:42px; margin:0px 0px 40px 0px; color:#fff;}
+.section1 h2 { font-size:42px; margin:0px 0px 20px 0px; color:#fff;}
 .section1 h1 {
     font-size: 52px;
     color: #fff;
