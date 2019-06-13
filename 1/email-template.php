@@ -1,4 +1,8 @@
 <?php
+
+// Start the buffering //
+ob_start();
+
 	// http://prntscr.com/nz72od
 	$email_date_title = 'DC Soul 2019 r1';
 
@@ -300,3 +304,10 @@ table, tr, td {
 	// })
 </script>
 </html>
+<?php
+
+echo '1';
+
+// Get the content that is in the buffer and put it in your file //
+file_put_contents('email-template.html', ob_get_contents());
+?>
