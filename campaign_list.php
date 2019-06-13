@@ -114,7 +114,7 @@
 							<a href="#" target="_blank">
 								<img src="./images/youtube.png" alt="youtube" style="margin-right:5px;display:inline-block;">
 							</a>
-							<a href="http://www.nozolo.com/" target="_blank">
+							<a href="http://www.nozolomusic.com/" target="_blank">
 								<img src="./images/home.png" alt="home" style="display:inline-block;">
 							</a>
 						</li>
@@ -169,7 +169,7 @@
 			<a href="https://twitter.com/NozoloMusic" target="_blank"><img src="./images/twitter.png" alt="twitter" style="margin-right:10px;display:inline-block;"></a>
 			<a href="https://www.instagram.com/nozolomusic/" target="_blank"><img src="./images/instagram.png" alt="instagram" style="margin-right:10px;display:inline-block;"></a>
 			<a href="#" target="_blank"><img src="./images/youtube.png" alt="youtube" style="margin-right:5px;display:inline-block;"></a>
-			<a href="http://www.nozolo.com/" target="_blank"><img src="./images/home.png" alt="home" style="display:inline-block;"></a>
+			<a href="http://www.nozolomusic.com/" target="_blank"><img src="./images/home.png" alt="home" style="display:inline-block;"></a>
 		<!-- </div> -->
 			<p>Copyright 2019 Nozolo Music. All Rights Reserved.</p>
 		</div>

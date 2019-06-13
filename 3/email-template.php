@@ -175,14 +175,14 @@ table, tr, td {
 <div class="mail-container">
 <table width="690px" cellpadding="0" cellspacing="0" style="background:#000000; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';">
   <tr>
-    <td colspan="3" style="text-align:center;"><a href="http://www.nozolo.com/" target="_blank"><img src="http://nozolomusic.com/images/email-logo.jpg" width="539" height="100" style="margin:0px auto" alt="logo" /></a></td>
+    <td colspan="3" style="text-align:center;"><a href="http://www.nozolomusic.com/" target="_blank"><img src="http://nozolomusic.com/images/email-logo.jpg" width="539" height="100" style="margin:0px auto" alt="logo" /></a></td>
   </tr>
 </table >
 <table style="background:#000000; padding:0px 20px 20px 20px; width:690px; font-family: 'Futura PT Book';">
   <tr>
     <td style="color:#fff; font-size:20px; text-align:center;"><?= $email_date_title ?></td>
 		<td style="font-size:27px; color:#e9e9e9; text-align:center;">
-			<a href="https://www.facebook.com/nozolomusic/" target="_blank"><img src="http://nozolomusic.com/images/facbook.png" alt="facebook" style="margin-right:10px;"></a><a href="https://twitter.com/NozoloMusic" target="_blank"><img src="http://nozolomusic.com/images/twitter.png" alt="twitter" style="margin-right:10px;"></a><a href="https://www.instagram.com/nozolomusic/" target="_blank"><img src="http://nozolomusic.com/images/instagram.png" alt="instagram" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/youtube.png" alt="youtube" style="margin-right:5px;"></a> <a href="http://www.nozolo.com/" target="_blank"><img src="http://nozolomusic.com/images/home.png" alt="home"></a>
+			<a href="https://www.facebook.com/nozolomusic/" target="_blank"><img src="http://nozolomusic.com/images/facbook.png" alt="facebook" style="margin-right:10px;"></a><a href="https://twitter.com/NozoloMusic" target="_blank"><img src="http://nozolomusic.com/images/twitter.png" alt="twitter" style="margin-right:10px;"></a><a href="https://www.instagram.com/nozolomusic/" target="_blank"><img src="http://nozolomusic.com/images/instagram.png" alt="instagram" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/youtube.png" alt="youtube" style="margin-right:5px;"></a> <a href="http://www.nozolomusic.com/" target="_blank"><img src="http://nozolomusic.com/images/home.png" alt="home"></a>
 		</td>
   </tr>
 </table>
@@ -276,10 +276,10 @@ table, tr, td {
 </table>
 <table width="690px" cellpadding="0" cellspacing="30" style="background:#363636; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';">
   <tr style="text-align:center; color:#fff; font-size:32px;" >
-    <td height="37"><a href="http://www.nozolo.com/" target="_blank" style="color:#fff;text-decoration:none;">NOZOLO HOME PAGE</a><br>
-      <a href="http://www.nozolo.com/#register" target="_blank" style="color:#fff;text-decoration:none;">REGISTER</a> WITH NOZOLO </td>
+    <td height="37"><a href="http://www.nozolomusic.com/" target="_blank" style="color:#fff;text-decoration:none;">NOZOLO HOME PAGE</a><br>
+      <a href="http://www.nozolomusic.com/#register" target="_blank" style="color:#fff;text-decoration:none;">REGISTER</a> WITH NOZOLO </td>
   <tr>
-    <td style="font-size:27px; color:#e9e9e9; text-align:center;"><a href="#" target="_blank"><img src="http://nozolomusic.com/images/facbook.png" alt="facebook" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/twitter.png" alt="twitter" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/instagram.png" alt="instagram" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/youtube.png" alt="youtube" style="margin-right:10px;"></a><a href="http://www.nozolo.com/" target="_blank"><img src="http://nozolomusic.com/images/home.png" alt="home"></a></td>
+    <td style="font-size:27px; color:#e9e9e9; text-align:center;"><a href="#" target="_blank"><img src="http://nozolomusic.com/images/facbook.png" alt="facebook" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/twitter.png" alt="twitter" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/instagram.png" alt="instagram" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/youtube.png" alt="youtube" style="margin-right:10px;"></a><a href="http://www.nozolomusic.com/" target="_blank"><img src="http://nozolomusic.com/images/home.png" alt="home"></a></td>
   </tr>
   <tr>
     <td style="font-size:27px; color:#e9e9e9; text-align:center;">Copyright 2019 Nozolo Music.  All Rights Reserved.</td>
