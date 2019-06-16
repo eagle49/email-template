@@ -150,7 +150,7 @@
 					<?php
 					foreach($sponsors as $sponser) {
 						echo '<div class="col-md-3 col-sm-4">
-							<img src="http://localhost/email-template/images/'.$sponser["image"].'" style="width: 100%; max-width: 150px; height: 150px;">
+							<img src="http://nozolomusic.com/images/'.$sponser["image"].'" style="width: 100%; max-width: 150px; height: 150px;">
 							</div>';
 						}
 					?>
