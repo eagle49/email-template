@@ -53,7 +53,7 @@ ob_start();
 			'type'		=> 'playlist_block',
 			'title'		=> 'PLAYLIST',
 			'link'		=> 'https://open.spotify.com/embed/playlist/3tEgSJDGXro1blzJ8Z5Yle',
-			'image'		=> 'sportify.jpg'
+			'image'		=> 'spotify.png'
 		],
 		// block1
 		[
@@ -246,8 +246,8 @@ table, tr, td {
 <?php
 		} else if ( $type == 'playlist_block' ) {
 ?>
-		<td valign="top" style="text-align:center; margin-top:20px;" width="50%;"><h3 style="color:#fff; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;"><?= $image_blocks[$i]['title'] ?></h3>
-		<a href="<?= $image_blocks[$i]['link'] ?>" target="_blank"><img src="https://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>" style="display:block; margin:0 auto;"></a></td>
+		<td valign="top" style="text-align:center; margin-top:20px; background-image:url('https://images.ctfassets.net/58l7lmmaka1i/2jqTg1i70ce8G6yUyIi624/77fcf976d461fd96715da306b0afec34/cover.jpg'); background-size: 150% 100%; background-position: 50% 0;" width="50%;"><h3 style="color:#fff; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;"><?= $image_blocks[$i]['title'] ?></h3>
+		<a href="<?= $image_blocks[$i]['link'] ?>" target="_blank"><img src="https://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>" style="display:block; margin:0 auto; width: 50%;"></a></td>
 <?php			
 		} else if ( $type == 'thumbnail_with_title' ) {
 			
