@@ -129,13 +129,13 @@ ob_start();
 <style>
 @font-face {
  font-family: 'Futura PT Book';
- src: url('http://nozolomusic.com/fonts/FuturaPT-Book.woff2') format('woff2'), url('http://nozolomusic.com/fonts/FuturaPT-Book.woff') format('woff');
+ src: url('https://nozolomusic.com/fonts/FuturaPT-Book.woff2') format('woff2'), url('https://nozolomusic.com/fonts/FuturaPT-Book.woff') format('woff');
  font-weight: normal;
  font-style: normal;
 }
  @font-face {
  font-family: 'Futura PT';
- src: url('http://nozolomusic.com/fonts/FuturaPT-Medium.woff2') format('woff2'), url('http://nozolomusic.com/fonts/FuturaPT-Medium.woff') format('woff');
+ src: url('https://nozolomusic.com/fonts/FuturaPT-Medium.woff2') format('woff2'), url('https://nozolomusic.com/fonts/FuturaPT-Medium.woff') format('woff');
  font-weight: 500;
  font-style: normal;
 }
@@ -178,24 +178,24 @@ table, tr, td {
 <div class="mail-container">
 <table width="690px" cellpadding="0" cellspacing="0" style="background:#000000; padding:20px 20px 20px 20px; font-family: 'Futura PT Book';">
   <tr>
-    <td colspan="3" style="text-align:center;"><a href="http://www.nozolomusic.com/" target="_blank"><img src="http://nozolomusic.com/images/email-logo.jpg" width="539" height="100" style="margin:0px auto" alt="logo" /></a></td>
+    <td colspan="3" style="text-align:center;"><a href="https://www.nozolomusic.com/" target="_blank"><img src="https://nozolomusic.com/images/email-logo.jpg" width="539" height="100" style="margin:0px auto" alt="logo" /></a></td>
   </tr>
 </table >
 <table style="background:#000000; padding:0px 20px 20px 20px; width:690px; font-family: 'Futura PT Book';">
   <tr>
     <td style="color:#fff; font-size:20px; text-align:center;"><?= $email_date_title ?></td>
 		<td style="font-size:27px; color:#e9e9e9; text-align:center;">
-			<a href="https://www.facebook.com/nozolomusic/" target="_blank"><img src="http://nozolomusic.com/images/facbook.png" alt="facebook" style="margin-right:10px;"></a><a href="https://twitter.com/NozoloMusic" target="_blank"><img src="http://nozolomusic.com/images/twitter.png" alt="twitter" style="margin-right:10px;"></a><a href="https://www.instagram.com/nozolomusic/" target="_blank"><img src="http://nozolomusic.com/images/instagram.png" alt="instagram" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/youtube.png" alt="youtube" style="margin-right:5px;"></a> <a href="http://www.nozolomusic.com/" target="_blank"><img src="http://nozolomusic.com/images/home.png" alt="home"></a>
+			<a href="https://www.facebook.com/nozolomusic/" target="_blank"><img src="https://nozolomusic.com/images/facbook.png" alt="facebook" style="margin-right:10px;"></a><a href="https://twitter.com/NozoloMusic" target="_blank"><img src="https://nozolomusic.com/images/twitter.png" alt="twitter" style="margin-right:10px;"></a><a href="https://www.instagram.com/nozolomusic/" target="_blank"><img src="https://nozolomusic.com/images/instagram.png" alt="instagram" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="https://nozolomusic.com/images/youtube.png" alt="youtube" style="margin-right:5px;"></a> <a href="https://www.nozolomusic.com/" target="_blank"><img src="https://nozolomusic.com/images/home.png" alt="home"></a>
 		</td>
   </tr>
 </table>
 <table width="690px" cellpadding="0" cellspacing="0" style="background:#000000; padding:20px 20px 20px 20px;">
   <tr>
-    <td style="text-align:center;"><a href="<?= $support1_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><img src="http://nozolomusic.com/images/<?= $support1_block['file_name'] ?>" width="181" height="121" align="image" style="margin:0px 0px 0px 0px;" /></a>
+    <td style="text-align:center;"><a href="<?= $support1_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><img src="https://nozolomusic.com/images/<?= $support1_block['file_name'] ?>" width="181" height="121" align="image" style="margin:0px 0px 0px 0px;" /></a>
       <p style="margin:0px 0px 0px 0px; color:#fff;"><a href="<?= $support1_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><?= $support1_block['title'] ?></a></p></td>
-    <td style="text-align:center;"><a href="<?= $support2_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><img src="http://nozolomusic.com/images/<?= $support2_block['file_name'] ?>" width="181" height="121" align="image" /></a>
+    <td style="text-align:center;"><a href="<?= $support2_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><img src="https://nozolomusic.com/images/<?= $support2_block['file_name'] ?>" width="181" height="121" align="image" /></a>
       <p style="margin:0px 0px 0px 0px; color:#fff;"><a href="<?= $support2_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><?= $support2_block['title'] ?></a></p></td>
-    <td style="text-align:center;"><a href="<a href="<?= $support3_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><img src="http://nozolomusic.com/images/<?= $support3_block['file_name'] ?>" width="181" height="121" align="image" /></a>
+    <td style="text-align:center;"><a href="<a href="<?= $support3_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><img src="https://nozolomusic.com/images/<?= $support3_block['file_name'] ?>" width="181" height="121" align="image" /></a>
       <p style="margin:0px 0px 0px 0px; color:#fff;"><a href="<?= $support3_block['link'] ?>" style="margin:0px 0px 0px 0px; color:#fff;" target="_blank"><?= $support3_block['title'] ?></a></p></td>
   </tr>
 </table>
@@ -217,15 +217,15 @@ table, tr, td {
 		} else if ( $type == 'playlist_block' ) {
 ?>
 		<td valign="top" style="text-align:center; margin-top:20px;" width="50%;"><h3 style="color:#fff; font-family: 'Futura PT'; font-size:28px; margin-top:20px;margin-bottom:15px;"><?= $image_blocks[$i]['title'] ?></h3>
-		<a href="<?= $image_blocks[$i]['link'] ?>" target="_blank"><img src="http://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>" style="display:block; margin:0 auto;"></a></td>
+		<a href="<?= $image_blocks[$i]['link'] ?>" target="_blank"><img src="https://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>" style="display:block; margin:0 auto;"></a></td>
 <?php			
 		} else if ( $type == 'thumbnail_with_title' ) {
 ?>
-			<td style="text-align:center;background-image:url(http://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom"><h2 style="margin:0px 0px 0px 0px; color:#fff; text-shadow: 1px 0px 2px #000000;"><?= $image_blocks[$i]['title'] ?></h2></td>		
+			<td style="text-align:center;background-image:url(https://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom"><h2 style="margin:0px 0px 0px 0px; color:#fff; text-shadow: 1px 0px 2px #000000;"><?= $image_blocks[$i]['title'] ?></h2></td>		
 <?php
 		} else if ( $type == 'thumbnail_with_fullcontent' ) {
 ?>
-		 <td style="text-align:center;background-image:url(http://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="middle">
+		 <td style="text-align:center;background-image:url(https://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="middle">
 		 	<div style="color:#fff;height:240px;width:100%;overflow-y: auto;float:left;margin:0px 0px 0px 0px; " class="scrollbar" id="style-8">
         		<div class="force-overflow"></div>
         		<?= $image_blocks[$i]['content'] ?>
@@ -235,13 +235,13 @@ table, tr, td {
 		} else if ( $type == 'thumbnail_youtube' ) {
 ?>
 		 <td style="text-align:center;height:240px; width:50%; position: relative;" valign="bottom">
-			 <a href="<?= $image_blocks[$i]['youtube_link'] ?>" style="width:100%; height: 100%; display: block; position:relative; background:url(http://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>">
+			 <a href="<?= $image_blocks[$i]['youtube_link'] ?>" style="width:100%; height: 100%; display: block; position:relative; background:url(https://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>">
 			 </a>
 		</td>
 <?php
 		} else if ( $type == 'thumbnail_with_halfcontent' ) {
 ?>
-    <td style="text-align:center;height:240px; width:50%;" valign="top"><img src="http://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>" width="262" height="140" alt="image" />
+    <td style="text-align:center;height:240px; width:50%;" valign="top"><img src="https://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>" width="262" height="140" alt="image" />
 		<div style="color:#fff;height:90px;width:100%;overflow-y: auto;float:left;margin:10px 0px 0px 0px; " class="scrollbar" id="style-8">
         	<div class="force-overflow"></div>
 			<?= $image_blocks[$i]['content'] ?>
@@ -250,7 +250,7 @@ table, tr, td {
 <?php
 		} else if ( $type == 'thumbnail_only' ) {
 ?>
-	<td style="text-align:center;background-image:url(http://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom">
+	<td style="text-align:center;background-image:url(https://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:240px; width:50%;" valign="bottom">
 	</td>
 <?php	
 	}
@@ -267,7 +267,7 @@ table, tr, td {
 		for($i=0; $i<count($sponsors); $i++) {
 			if ($i%4 == 0) echo '<tr>';
 			echo '<td style="width: 25%; border-radius: 30px; valign: top;">
-				<img src="http://nozolomusic.com/images/'.$sponsors[$i]['image'].'" style="width: 100%; height: 150px;"/>
+				<img src="https://nozolomusic.com/images/'.$sponsors[$i]['image'].'" style="width: 100%; height: 150px;"/>
 			</td>';
 			// if ($i%2 == 0) echo '</tr>';
 		}
@@ -279,10 +279,10 @@ table, tr, td {
 </table>
 <table width="590px" cellpadding="0" cellspacing="30" style="background:#363636; padding:20px 20px 20px 20px; font-family: 'Futura PT Book'; margin-left: 50px;">
   <tr style="text-align:center; color:#fff; font-size:32px;" >
-    <td height="37"><a href="http://www.nozolomusic.com/" target="_blank" style="color:#fff;text-decoration:none;">NOZOLO HOME PAGE</a><br>
-      <a href="http://www.nozolomusic.com/#register" target="_blank" style="color:#fff;text-decoration:none;">REGISTER</a> WITH NOZOLO </td>
+    <td height="37"><a href="https://www.nozolomusic.com/" target="_blank" style="color:#fff;text-decoration:none;">NOZOLO HOME PAGE</a><br>
+      <a href="https://www.nozolomusic.com/#register" target="_blank" style="color:#fff;text-decoration:none;">REGISTER</a> WITH NOZOLO </td>
   <tr>
-    <td style="font-size:27px; color:#e9e9e9; text-align:center;"><a href="#" target="_blank"><img src="http://nozolomusic.com/images/facbook.png" alt="facebook" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/twitter.png" alt="twitter" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/instagram.png" alt="instagram" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="http://nozolomusic.com/images/youtube.png" alt="youtube" style="margin-right:10px;"></a><a href="http://www.nozolomusic.com/" target="_blank"><img src="http://nozolomusic.com/images/home.png" alt="home"></a></td>
+    <td style="font-size:27px; color:#e9e9e9; text-align:center;"><a href="#" target="_blank"><img src="https://nozolomusic.com/images/facbook.png" alt="facebook" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="https://nozolomusic.com/images/twitter.png" alt="twitter" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="https://nozolomusic.com/images/instagram.png" alt="instagram" style="margin-right:10px;"></a><a href="#" target="_blank"><img src="https://nozolomusic.com/images/youtube.png" alt="youtube" style="margin-right:10px;"></a><a href="https://www.nozolomusic.com/" target="_blank"><img src="https://nozolomusic.com/images/home.png" alt="home"></a></td>
   </tr>
   <tr>
     <td style="font-size:27px; color:#e9e9e9; text-align:center;">Copyright 2019 Nozolo Music.  All Rights Reserved.</td>
