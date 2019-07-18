@@ -293,24 +293,8 @@ table, tr, td {
 </div>
 
 </body>
-<script>
-	// $.ajax({
-	// 	url: '../mail_send.php',
-	// 	method: 'post',
-	// 	data: {
-	// 		'type': 'send_template',
-	// 		'content': $('body').html()
-	// 	},
-	// 	success: function(resp) {
-	// 		console.log(resp);
-	// 	}
-	// })
-</script>
 </html>
 <?php
-
-echo '1';
-
 // Get the content that is in the buffer and put it in your file //
 file_put_contents('email-template.html', ob_get_contents());
 ?>
