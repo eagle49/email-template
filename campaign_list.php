@@ -3,29 +3,11 @@
 		[
 			'image'   => 'list-image.png',
 			'content' => [
-				'CATEGORY: Live Soul',
+				'ISSUE: Cecily & Dante #1',
 				'YEAR-MONTH: 2019-07',
 				'MARKET: Washington, DC'
 			],
 			'index'   => '1'
-		],
-		[
-			'image'   => 'list-image.png',
-			'content' => [
-				'CATEGORY: Live Soul',
-				'YEAR-MONTH: 2019-07',
-				'MARKET: Washington, DC'
-			],
-			'index'   => '2'
-		],
-		[
-			'image'   => 'list-image.png',
-			'content' => [
-				'CATEGORY: Live Soul',
-				'YEAR-MONTH: 2019-07',
-				'MARKET: Washington, DC'
-			],
-			'index'   => '3'
 		],
 	];
 
@@ -90,7 +72,7 @@
 	<div class="container">
   		<div class="row">
   			<div class=" col-sm-6">
-    			<h2 class="camp_h2">DC Soul 2019 Campaign</h2>
+    			<h2 class="camp_h2">Campaign: Cecily and Dante</h2>
    			</div>
     		<div class=" col-sm-6">
     			<nav class="camp_nav">
@@ -141,20 +123,6 @@
 		<?php
 			}
 		?>
-		</div>
-	</div>
-	<div class="section1 section">
-		<div class="container">
-			<div class="bg-sponsor">
-				<h2 style="text-align:center;">SPONSORS</h2>
-					<?php
-					foreach($sponsors as $sponser) {
-						echo '<div class="col-md-3 col-sm-4">
-							<img src="http://nozolomusic.com/images/'.$sponser["image"].'" style="width: 100%; max-width: 150px; height: 150px;">
-							</div>';
-						}
-					?>
-			</div>
 		</div>
 	</div>
 	<footer>

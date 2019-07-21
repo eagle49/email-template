@@ -4,7 +4,7 @@
 ob_start();
 
 	// http://prntscr.com/nz72od
-	$email_date_title = 'DC Soul 2019 r1';
+	$email_date_title = 'Cecily and Dante #1';
 
 	// http://prntscr.com/nz72ta
 	$support1_block = [
@@ -24,72 +24,130 @@ ob_start();
 
 	// http://prntscr.com/nz76kt
 	$image_blocks = [
-		// calendar block
-		[
+	
+	
+	// calendar block
+				[
 			'type' 		=> 'calendar_block',
-			'title'		=> "Cecily's Events",
-			'image'		=> "too-much-cover.png",  // background image
+			'title'		=> "CECILY'S EVENTS",
+			'title_link'=> 'http://cecilymusic.com/tourdates/',
+			'image'		=> "cecilyevents.png",  // background image
 			'list-icon' => 'event-icon.png',
-			'color'		=> "#FFF", // #FFF
-			'font-size' => '16px',
-			'font-weight' => 500,
+			'color'		=> '#EEE',
+			'font-size' => '20px',
+			'font-weight' => 600,
 			'events'	=> [
-				['title' => "07/25/2019 @ Arlene's Grocery in NYC", 'link' => 'https://www.eventbrite.com/e/the-connect-great-pretender-cecily-tickets-60868388990'],
-				['title' => '07/26/2019 @ Fridays at Fort Totten (MD)', 'link' => '#'],
-				['title' => '09/09/2019 @ Falls Church, VA (Sings Nancy Wilson)', 'link' => '#'],
+				['title' => "____________", 'link' => '#'],	
+				['title' => "07/25/2019", 'link' => '#'],
+				['title' => "@ Arlene s Grocery - NYC", 'link' => '#'],
+				['title' => "____________", 'link' => '#'],
+				['title' => "07/26/2019", 'link' => '#'],
+				['title' => "@ Friday's at Fort Totten (MD)", 'link' => '#'],
+				['title' => "____________", 'link' => '#'],	
+				['title' => "09/09/2019", 'link' => '#'],
+				['title' => "Cecily Sings Nancy Wilson", 'link' => '#'],
+				['title' => "@ Creative Cauldron", 'link' => '#'],
+				['title' => "Falls Church, VA", 'link' => '#'],
+
 			]
 		],
-		// calendar block
-		[
+	
+	
+	// calendar block
+				[
 			'type' 		=> 'calendar_block',
-			'title'		=> "Dante's Events",
-			'image'		=> "capture.png",  // background image
+			'title'		=> "DANTE'S EVENTS",
+			'title_link'=> 'https://www.dantepope.com/shows',
+			'image'		=> "danteeventsnew.jpg",  // background image
 			'list-icon' => 'event-icon.png',
-			'color'		=> '#FFF',
-			'font-size' => '16px',
-			'font-weight' => 500,
+			'color'		=> '#EEE',
+			'font-size' => '20px',
+			'font-weight' => 600,
 			'events'	=> [
-				['title' => '08/02/2019 (The B-Sides)', 'link' => '#'],
+				['title' => "____________", 'link' => '#'],				
+				['title' => '08/02/2019', 'link' => '#'],
+				['title' => 'The B-Sides', 'link' => '#'],
+				['title' => 'with F.K. White', 'link' => '#'],
+				['title' => "____________", 'link' => '#'],	
+				['title' => '08/08/2019', 'link' => '#'],
+				['title' => 'Marvin DC', 'link' => '#'],
+				['title' => "____________", 'link' => '#'],					
+				['title' => '09/20/2019', 'link' => '#'],
+				['title' => '@ Rockwood Music Hall NYC', 'link' => '#'],		
+				['title' => "____________", 'link' => '#'],	
+				['title' => '09/21/2019', 'link' => '#'],
+				['title' => 'Blew Smoke Brooklyn, NY', 'link' => '#'],		
+				['title' => "____________", 'link' => '#'],
+				['title' => '09/25/2019', 'link' => '#'],
+				['title' => 'Wild Days at Eaton Hotel', 'link' => '#'],		
+				['title' => 'Washington, DC', 'link' => '#'],
+				['title' => "____________", 'link' => '#'],
+				['title' => '09/28/2019', 'link' => '#'],
+				['title' => 'Sotto DC', 'link' => '#'],		
+				['title' => "____________", 'link' => '#'],	
+				['title' => '10/12/2019', 'link' => '#'],		
+				['title' => 'Capital Hill Jazz Festival', 'link' => '#'],
+				['title' => "____________", 'link' => '#'],					
+				['title' => '10/19/2019', 'link' => '#'],		
+				['title' => 'Stevie Wonder Tribute', 'link' => '#'],		
+				['title' => '@ AMP by Strathmore', 'link' => '#']
 			]
 		],
+
 		// playlist block
 		[
-			'type'		=> 'playlist_block',
-			'title'		=> 'PLAYLIST',
-			'link'		=> 'https://open.spotify.com/embed/playlist/3tEgSJDGXro1blzJ8Z5Yle',
-			'image'		=> 'spotify.png',
-			'back_image' => 'spotspot2.gif'
+			'type' 		=> 'calendar_block',
+			'title'		=> "click here",
+			'title_link'=> 'https://open.spotify.com/embed/playlist/3tEgSJDGXro1blzJ8Z5Yle',
+			'image'		=> "playlist.gif",  // background image
+			'list-icon' => '',
+			'color'		=> '#000',
+			'font-size' => '16px',
+			'font-weight' => 500,
+			'events'	=> [
+				['title' => '', 'link' => '#'],
+
+			]
 		],
-		// block1
+		
+		
+					// calvideo
 		[
-			'type'		   => 'thumbnail_youtube',
-			'image'		   => 'hopevideo5.png',
-			'youtube_link' => 'https://youtu.be/lcEfVf8rpyE'
+			'type' 		=> 'calendar_block',
+			'title'		=> "click here",
+			'title_link'=> 'https://www.youtube.com/watch?v=lcEfVf8rpyE&feature=youtu.be',
+			'image'		=> "hopevideo_fri2.jpg",  // background image
+			'list-icon' => 'event-icon.png',
+			'color'		=> '#111',
+			'font-size' => '16px',
+			'font-weight' => 500,
+			'events'	=> [
+				['title' => '', 'link' => '#'],
+
+
+			]
 		],
 		
-		// block2
-		[
-			'type'		=> 'thumbnail_with_title',
-			'title'		=> 'EP Release Party at Blues Alley Tuesday July 9, 2019',
-			'image'		=> 'cecilymain.jpg',
-			'link'		=> '#',
-		],
 		
-		
-		// block3
+
+		// block22
 		[
 			'type'		=> 'thumbnail_with_title',
 			'title'		=> '',
-			'image'		=> 'dantebsides.png',
+			'image'		=> 'awakening2.gif',
 			'link'		=> '#',
 		],
+		// block3
 		[
 			'type'		=> 'thumbnail_with_title',
-			'title'		=> 'Dante passing it on to the kids at Levine Music Camp',
-			'image'		=> 'danteteaching.jpg',
-			'link'		=> 'http://www.levinemusic.org/camp-levine',
+			'title'		=> 'click for event link',
+			'image'		=> 'dantebsides3.png',
+			'link'		=> 'https://www.eventbrite.com/e/the-b-sides-one-summers-eve-tickets-65668280595',
 		]
 	];
+	
+	
+	
 	
 	$sponsors = [
 		[
@@ -116,13 +174,12 @@ ob_start();
 	];
 	// shuffle($image_blocks);
 ?>
-<!DOCTYPE>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<title>Newsletter</title>
+<title>Cecily & Dante #1</title>
 <style>
 @font-face {
  font-family: 'Futura PT Book';
@@ -137,40 +194,13 @@ ob_start();
  font-style: normal;
 }
 
-.e-description {
-	color: white;
-    padding: 10px 20px;
-		min-height: 180px;
-		margin-top: 12px;
-		background-image: url(https://nozolomusic.com/images/header_2.gif);
-		background-size: 100% 100%;
-		text-align: center;
-}
-
-.e-description p {
-	margin-top: 4px;
-	margin-bottom: 4px;
-	font-size: 18px;
-}
-
-.social-media a img {
-	width: 30px;
-	margin-right: 8px;
-}
 a {
 	text-decoration: none;
 }
 table, tr, td {
 	font-family: 'Futura PT Book';
 }
-.scrollbar {
-	float: left;
-	overflow-y: scroll;
-	margin-bottom: 25px;
-}
-/*
- *  STYLE 3
- */
+
  #style-8::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 	border-radius: 10px;
@@ -185,59 +215,28 @@ table, tr, td {
  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
  background-color: #555;
 }
-.mail-container {
-	display: block;
-	width: 690px;
-	margin: 0px auto;
-}
-
-.sponsor-table td {
-	max-width: 139px;
-}
-
-.sponsor-table:last-child {
-	margin-left: 80px;
-}
-
-span.media-left {
-    float: left;
-}
-
-.media-left img {
-	width: 20px;
-}
-
-.event-block {
-	padding: 2px 0px 5px;
-	/* border: solid 1px black; */
-	/* border-left: solid 2px #FF0067; */
-	margin: 0 3px 3px 5px;
-	/* box-shadow: 3px 3px 3px #111; */
-}
-
-.event-blocks{
-	height: 145px;
-    overflow-y: scroll;
-}
 
 .event-blocks::-webkit-scrollbar { width: 0 !important }
+.event-blocks::-webkit-scrollbar-track { width: 0 !important }
+.event-blocks::-webkit-scrollbar-thumb { width: 0 !important }
+
 </style>
 </head>
 <body style="margin: 0; background: black;">
-<div class="mail-container">
+<div class="mail-container" style="display: block; width: 690px; margin:0 auto;">
 <table width="650px" cellpadding="0" cellspacing="0" style="background:#000000; padding:20px 20px 20px 20px; font-family: 'Futura PT Book'; margin-left: 20px;">
   <tr>
-    <td colspan="3" style="text-align:center;"><a href="https://www.nozolomusic.com/" target="_blank"><img src="https://nozolomusic.com/images/email-logo.jpg" width="539" height="100" style="margin:0px auto" alt="logo" /></a></td>
+    <td colspan="3" style="text-align:center;"><a href="https://www.nozolomusic.com/1/email-template.php/" target="_blank"><img src="https://nozolomusic.com/images/email-logo.jpg" width="539" height="100" style="margin:0px auto" alt="logo" /></a></td>
   </tr>
   <tr>
 	<td>
-		<div class="e-description">
+		<div class="e-description" style="color: white; padding: 10px 20px; min-height: 180px; margin-top: 12px; background-image: url(https://nozolomusic.com/images/header_new.gif); background-size: 100% 100%; text-align: center;">
 		<?php
 			$handle = fopen("../".$description_file_name, "r");
 			if ($handle) {
 				while (($line = fgets($handle)) !== false) {
 					// process the line read.
-					echo "<p>".$line."</p>";
+					echo "<p style='margin-top: 4px; margin-bottom: 4px; font-size: 18px;'>".$line."</p>";
 				}
 				fclose($handle);
 			}
@@ -250,11 +249,11 @@ span.media-left {
   <tr>
     <td style="color:#fff; font-size:20px; text-align:center; width: 50%;"><?= $email_date_title ?></td>
 		<td class="social-media" style="font-size:27px; color:#e9e9e9; text-align:center;">
-			<a href="https://www.facebook.com/nozolomusic/" target="_blank" style="margin-left: 12px;"><img src="https://nozolomusic.com/images/facbook.png" alt="facebook"></a>
-			<a href="https://twitter.com/NozoloMusic" target="_blank"><img src="https://nozolomusic.com/images/twitter.png" alt="twitter"></a>
-			<a href="https://www.instagram.com/nozolomusic/" target="_blank"><img src="https://nozolomusic.com/images/instagram.png" alt="instagram"></a>
-			<a href="#" target="_blank"><img src="https://nozolomusic.com/images/youtube.png" alt="youtube"></a>
-			<a href="https://www.nozolomusic.com/" target="_blank"><img src="https://nozolomusic.com/images/home.png" alt="home"></a>
+			<a href="https://www.facebook.com/nozolomusic/" target="_blank" style="margin-left: 12px;"><img src="https://nozolomusic.com/images/facbook.png" alt="facebook" style="width: 30px; margin-right: 8px"></a>
+			<a href="https://twitter.com/NozoloMusic" target="_blank"><img src="https://nozolomusic.com/images/twitter.png" alt="twitter" style="width: 30px; margin-right: 8px"></a>
+			<a href="https://www.instagram.com/nozolomusic/" target="_blank"><img src="https://nozolomusic.com/images/instagram.png" alt="instagram" style="width: 30px; margin-right: 8px"></a>
+			<a href="#" target="_blank"><img src="https://nozolomusic.com/images/youtube.png" alt="youtube" style="width: 30px; margin-right: 8px"></a>
+			<a href="https://www.nozolomusic.com/" target="_blank"><img src="https://nozolomusic.com/images/home.png" alt="home" style="width: 30px; margin-right: 8px"></a>
 		</td>
   </tr>
 </table>
@@ -285,16 +284,18 @@ span.media-left {
 		" width="50%;">
 		<?php
 			if ( $image_blocks[$i]["title"] ) 
-				echo '<h3 style="color:'.$color.'; font-family: Futura PT; font-size:28px; margin-top:20px;margin-bottom:15px;font-weight:normal;"> '.$image_blocks[$i]['title'].'</h3>';
+				echo '<a href="'.$image_blocks[$i]['title_link'].'" target="_blank"><h3 style="color:'.$color.'; font-family: Futura PT; font-size:28px; margin-top:20px;margin-bottom:15px;font-weight:normal;"> '.$image_blocks[$i]['title'].'</h3></a>';
 		?>
-		<div class="event-blocks">
-		<?php
-			foreach($image_blocks[$i]['events'] as $event) {
-				echo '<div class="event-block">';
-				echo '<span class="media-body"><a href="'.$event['link'].'" style="color:'.$color.';text-decoration:none; font-size:'.$image_blocks[$i]['font-size'].'; font-weight:'.$image_blocks[$i]['font-weight'].'">'.$event['title'].'</span>';
-				echo '</a></div>';
-			}
-		?>
+		<div class="e-blocks" style="height: 145px; width: 100%; overflow: hidden; position: relative;">
+			<div class="event-blocks" style="height: 145px; overflow-y: scroll; position: absolute; top: 0; left: 0; right: -17px;">
+			<?php
+				foreach($image_blocks[$i]['events'] as $event) {
+					echo '<div class="event-block" style="padding: 0 3px; margin: 0 0 2px 0;">';
+					echo '<span class="media-body"><a href="'.$event['link'].'" style="color:'.$color.';text-decoration:none; font-size:'.$image_blocks[$i]['font-size'].'; font-weight:'.$image_blocks[$i]['font-weight'].'">'.$event['title'].'</span>';
+					echo '</a></div>';
+				}
+			?>
+			</div>
 		</div>
 		</td>
 <?php
@@ -317,7 +318,7 @@ span.media-left {
 		} else if ( $type == 'thumbnail_with_fullcontent' ) {
 ?>
 		 <td style="text-align:center;background-image:url(https://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>); background-repeat:no-repeat;background-size:cover;background-position:center;height:210px; width:50%;" valign="middle">
-		 	<div style="color:#fff;height:210px;width:100%;overflow-y: auto;float:left;margin:0px 0px 0px 0px; " class="scrollbar" id="style-8">
+		 	<div style="color:#fff;height:210px;width:100%;overflow-y: scroll;float:left;margin:0px 0px 25px 0px; " class="scrollbar" id="style-8">
         		<div class="force-overflow"></div>
         		<?= $image_blocks[$i]['content'] ?>
 			</div>
@@ -334,7 +335,7 @@ span.media-left {
 		} else if ( $type == 'thumbnail_with_halfcontent' ) {
 ?>
     <td style="text-align:center;height:210px; width:50%;" valign="top"><img src="https://nozolomusic.com/images/<?= $image_blocks[$i]['image'] ?>" width="262" height="140" alt="image" />
-		<div style="color:#fff;height:90px;width:100%;overflow-y: auto;float:left;margin:10px 0px 0px 0px; " class="scrollbar" id="style-8">
+		<div style="color:#fff;height:90px;width:100%;overflow-y: scroll;float:left;margin:10px 0px 25px 0px; " class="scrollbar" id="style-8">
         	<div class="force-overflow"></div>
 			<?= $image_blocks[$i]['content'] ?>
 		</div>
@@ -351,32 +352,14 @@ span.media-left {
 
 ?>
 </table>
-<table width="690px" cellpadding="0" cellspacing="30" style="display:none; background:#000000; padding:0px 20px 0px 20px; font-family: 'Futura PT Book';margin-top:-50px;">
-  <tr>
-		<td style="text-align:center;background:#FFF;float: left; width:100%;" valign="top"><h2 style="margin-top:20px; font-family: 'Futura PT'; font-size:35px; margin-top:20px;margin-bottom:0px; color: #7e191d;">SPONSORS</h2>
-		
-			<?php
-		for($i=0; $i<count($sponsors); $i++) {
-			if ($i%4 == 0) echo '<table style="padding: 0px 12px;" class="sponsor-table"><tr>';
-			echo '<td style="border-radius: 30px; valign: top;">
-				<img src="https://nozolomusic.com/images/'.$sponsors[$i]['image'].'" style="width: 100%; height: 150px;"/>
-			</td>';
-			// if ($i%4 == 0) echo '</tr></table>';
-		}
-		echo '</table>';
-		?>
-		</td>
-	</tr>
-	
-</table>
 <table width="590px" cellpadding="0" cellspacing="30" style="background:#363636; padding:0px 20px; font-family: 'Futura PT Book'; margin-left: 50px;">
   <tr>
     <td style="font-size:27px; color:#e9e9e9; text-align:center;" class="social-media">
-		<a href="#" target="_blank"><img src="https://nozolomusic.com/images/facbook.png" alt="facebook"></a>
-		<a href="#" target="_blank"><img src="https://nozolomusic.com/images/twitter.png" alt="twitter"></a>
-		<a href="#" target="_blank"><img src="https://nozolomusic.com/images/instagram.png" alt="instagram"></a>
-		<a href="#" target="_blank"><img src="https://nozolomusic.com/images/youtube.png" alt="youtube"></a>
-		<a href="https://www.nozolomusic.com/" target="_blank"><img src="https://nozolomusic.com/images/home.png" alt="home"></a>
+		<a href="#" target="_blank"><img src="https://nozolomusic.com/images/facbook.png" alt="facebook" style="width: 30px; margin-right: 8px"></a>
+		<a href="#" target="_blank"><img src="https://nozolomusic.com/images/twitter.png" alt="twitter" style="width: 30px; margin-right: 8px"></a>
+		<a href="#" target="_blank"><img src="https://nozolomusic.com/images/instagram.png" alt="instagram" style="width: 30px; margin-right: 8px"></a>
+		<a href="#" target="_blank"><img src="https://nozolomusic.com/images/youtube.png" alt="youtube" style="width: 30px; margin-right: 8px"></a>
+		<a href="https://www.nozolomusic.com/" target="_blank"><img src="https://nozolomusic.com/images/home.png" alt="home" style="width: 30px; margin-right: 8px"></a>
 	</td>
   </tr>
   <tr>
